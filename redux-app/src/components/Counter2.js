@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "../App.css";
 import { upAction, downAction } from "../actions/action";
 
-const Counter = () => {
+const Counter2 = () => {
   // const [count, setCount] = useState(0);
   const count = useSelector((state) => state.updown);
   const dispatch = useDispatch();
@@ -13,16 +13,16 @@ const Counter = () => {
         <button className="increment btn" onClick={() => dispatch(upAction(1))}>
           +
         </button>
-        <h3>Counter : {count}</h3>
+        <h3>Counter2 : {count}</h3>
         <button
           className="decrement btn"
-          onClick={() => dispatch(downAction(2))}
+          onClick={() => dispatch(downAction(1))}
         >
-          -2
+          -
         </button>
       </div>
     </>
   );
 };
 
-export default Counter;
+export default Counter2;

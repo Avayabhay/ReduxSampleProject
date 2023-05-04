@@ -39,6 +39,7 @@
 
 .counter {
   display: flex;
+  top: 50%;
   /* margin: auto; */
   justify-content: center;
   align-items: center;
